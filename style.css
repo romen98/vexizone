@@ -197,22 +197,25 @@ nav a:hover {
     margin-bottom: 20px;
     border-bottom: 1px solid #2e1065;
     padding-bottom: 15px;
+    gap: 10px; /* щоб назва і ціна не злипалися, якщо текс довгий */
 }
 
 .donate-header h3 {
     color: #c084fc;
-    font-size: 1.5rem;
+    font-size: 1.35rem; /* трохи зменшили розмір шрифту, щоб довгі назви влізали ідеально */
     font-weight: 800;
+    word-break: break-word;
 }
 
 .price {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: bold;
     color: #e9d5ff;
     background: rgba(168, 85, 247, 0.15);
-    padding: 4px 12px;
+    padding: 4px 10px;
     border-radius: 8px;
     border: 1px solid rgba(168, 85, 247, 0.3);
+    white-space: nowrap; /* забороняємо ціні переноситись у два рядки */
 }
 
 .donate-perks {
